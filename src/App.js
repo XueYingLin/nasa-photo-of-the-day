@@ -3,6 +3,8 @@ import React from "react";
 import "./App.css";
 import Title from "./components/HeaderSection/Title";
 import SearchBar from "./components/HeaderSection/SearchBar";
+import PostPage from "./components/PostsContainer/PostPage";
+// import PageGuide from "./components/PostsContainer/PageGuide";
 
 function App() {
   return (
@@ -10,9 +12,12 @@ function App() {
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
+      </p>
         <Title />
         <SearchBar />
-      </p>
+        {/* <PageGuide /> */}
+        <PostPage />
+      
     </div>
   );
 }
