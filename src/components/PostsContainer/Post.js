@@ -1,24 +1,39 @@
 import React, { useState } from "react";
 import PageGuide from "./PageGuide";
-// import LikeSection from "./LikeSection";
-import "./PostPage.css";
+import styled from "styled-components";
 
+const Image = styled.img `
+  width: 80%;
+  object-fit: scale;
+`;
+const Frame = styled.div `
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+`;
+const Explanation = styled.div `
+  margin: 0 10%;
+`;
 const Post = props => {
    
     return (
         <div>
         <div className="APOD">
-            <img src={props.url} alt="image"></img>
-            <p>Copyright: {props.copyright}</p>
-            <p>date: {props.date}</p>
-            <p>explanation: {props.explanation}</p>
-            
+            <Image src={props.url} alt="image"></Image>
+            <Frame>
+              <p>Copyright: {props.copyright}</p>
+              <p>date: {props.date}</p>
+              <Explanation>explanation: {props.explanation}</Explanation>
+            </Frame>
         </div>
+
         <PageGuide />
         </div>
 
     )
-    // <LikeSection like={likes} increatmentLikes = {increatmentLikes} />
+    
 }
 
 export default Post;

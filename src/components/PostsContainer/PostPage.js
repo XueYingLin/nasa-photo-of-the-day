@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Post from "./Post";
-import "./PostPage.css";
+// import "./PostPage.css";
 import axios from "axios";
 
 export default function PostPage() {

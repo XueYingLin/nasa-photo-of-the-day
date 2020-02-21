@@ -6,6 +6,13 @@ import SearchBar from "./components/HeaderSection/SearchBar";
 import PostPage from "./components/PostsContainer/PostPage";
 // import PageGuide from "./components/PostsContainer/PageGuide";
 
+
+// export default (props) => {
+//   return (
+//     <Button color="danger">Danger!</Button>
+//   )
+// }
+
 function App() {
   return (
     <div className="App">
